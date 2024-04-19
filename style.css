@@ -68,18 +68,18 @@ a:hover {
   cursor: default;
 }
 
-/* HAMBURGER MENU */
+/* header MENU */
 
-#hamburger-nav {
+#header-nav {
   display: none;
 }
 
-.hamburger-menu {
+.header-menu {
   position: relative;
   display: inline-block;
 }
 
-.hamburger-icon {
+.header-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -88,7 +88,7 @@ a:hover {
   cursor: pointer;
 }
 
-.hamburger-icon span {
+.header-icon span {
   width: 100%;
   height: 2px;
   background-color: black;
@@ -124,27 +124,27 @@ a:hover {
   max-height: 300px;
 }
 
-.hamburger-icon.open span:first-child {
+.header-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
 
-.hamburger-icon.open span:nth-child(2) {
+.header-icon.open span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger-icon.open span:last-child {
+.header-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
-.hamburger-icon span:first-child {
+.header-icon span:first-child {
   transform: none;
 }
 
-.hamburger-icon span:first-child {
+.header-icon span:first-child {
   opacity: 1;
 }
 
-.hamburger-icon span:first-child {
+.header-icon span:first-child {
   transform: none;
 }
 
@@ -286,6 +286,7 @@ section {
 
 #about {
   position: relative;
+
 }
 
 .about-containers {
@@ -337,9 +338,9 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
+/* #experience {
   position: relative;
-}
+} */
 
 .experience-sub-title {
   color: rgb(85, 85, 85);
@@ -376,9 +377,9 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-#projects {
+/* #projects {
   position: relative;
-}
+} */
 
 .color-container {
   border-color: rgb(163, 163, 163);
@@ -399,6 +400,23 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+.project-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 0 0 1rem;
+}
+.project-list span{
+  color: white;
+  background-color: rgb(53, 53, 53);
+  /* border:  2px solid; */
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+
 }
 
 /* CONTACT */

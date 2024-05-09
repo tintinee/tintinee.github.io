@@ -7,10 +7,16 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">KMM</div>
+      <div class="logo">
+        <img src="assets/kmm.gif" alt="KMM">
+    </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -38,7 +44,7 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container image">
-        <img src="./assets/Medrano.jpg" alt="John Doe profile picture" />
+        <img src="./assets/Medrano.jpg" alt="" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -47,7 +53,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/Medrano-Kristina_CV.pdf')"
+            onclick="window.open('./assets/Medrano_Kristina_CV.pdf')"
           >
             Download CV
           </button>
@@ -83,241 +89,261 @@
         </div>
       </div>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/Medrano_AM.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/Medrano_AM.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="text-container">
+                <p>
+                  Highly motivated IT graduate equipped with a versatile skill set and a solid academic background. 
+                  Possessing a strong work ethic and exceptional problem-solving abilities, I am adaptable and quick to learn, 
+                  poised to make meaningful contributions to any organization or company that aligns with my skills and aspirations.
+                </p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/details-white.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Details</h3>
+                <h4> Birthdate: </h4><p>May 31, 2001</p>
+                <h4> Number:</h4><p>055 382 9772</p>
+                <h4> Email:</h4><p> kristinamae.medrano@gmail.com</p>
+                <h4>Address:</h4><p> Masaken Al Muraqqabat 01, Dubai UAE</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education-white.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <h4> University of Batangas (2019-2023)</h4><p>Bachelor of Science in Information Technology</p>
+                <h4> University of Batangas (2017-2019)</h4><p>Science, Technology, Engineering, and Matahematics</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/work-white.png"
+                  alt="Work icon"
+                  class="icon"
+                />
+                
+                <h3>Work History</h3>
+                <h4> Kari C x APEX (2023-2024)</h4><p>UI/UX Designer</p>
+                <h4> Kari C x APEX (2023-2024)</h4><p>Office Coordinator/Office Assistant</p>
+                <h4> JCBA Solutions and Cosnsultancy (2023)</h4><p>Web Developer Intern</p>
+              </div>
+            </div>
+            <!-- <div class="text-container">
+              <p>
+                Highly motivated IT graduate equipped with a versatile skill set and a solid academic background. 
+                Possessing a strong work ethic and exceptional problem-solving abilities, I am adaptable and quick to learn, 
+                poised to make meaningful contributions to any organization or company that aligns with my skills and aspirations.
+              </p>
+            </div> -->
+          </div>
         </div>
-        <div class="about-details-container">
+        <!-- <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        /> -->
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/details.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Details</h3>
-              <h4> Birthdate:</h4> <p>May 31, 2001</p>
-              <h4> Number:</h4> <p>055 382 9772</p>
-              <h4> Address</h4> <p>Masaken Al Muraqqabat 01,<br/> Dubai UAE</p>
+              <h2 class="experience-sub-title">Frontend and Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>VB</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Wordpress</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C#</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MySQL</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>PHP</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Unity</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <h4> University of Batangas (2019-2023)</h4><p>Bachelor of Science in <br />Information Technology</p>
-              <h4> University of Batangas (2017-2019)</h4><p>Science, Technology, Engineering, <br/>and Matahematics</p>
+              <h2 class="experience-sub-title">Designer</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Figma</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Framer</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Canva</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Procreate</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Blender</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Adobe</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Highly motivated IT graduate equipped with a versatile skill set and a solid academic background. 
-              Possessing a strong work ethic and exceptional problem-solving abilities, I am adaptable and quick to learn, 
-              poised to make meaningful contributions to any organization or company that aligns with my skills and aspirations.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      /> -->
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend and Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>VB</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Wordpress</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PHP</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Unity</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Designer</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Figma</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Framer</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Canva</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Procreate</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Blender</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Adobe</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+            
           </div>
           
         </div>
-        
-      </div>
       
       <!-- <img
         src="./assets/arrow.png"
@@ -331,7 +357,7 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container color-container projects-con">
             <div class="article-container">
               <img
                 src="./assets/apex-project.jpg"
@@ -341,7 +367,7 @@
             </div>
             <h2 class="experience-sub-title project-title">Apex Global Forum</h2>
             <div class="project-list">
-              <span>Figms</span>
+              <span>Figma</span>
             </div>
             <div class="btn-container">
               <button
@@ -356,7 +382,7 @@
             >Live Demo</button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container projects-con">
             <div class="article-container">
               <img
                 src="./assets/karic-project.png"
@@ -386,7 +412,7 @@
             >Live Demo</button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container projects-con">
             <div class="article-container">
               <img
                 src="./assets/bvc-project.png"
@@ -418,6 +444,122 @@
               </button>
             </div>
           </div>
+          <div class="details-container color-container projects-con">
+            <div class="article-container">
+              <img
+                src="./assets/kickzamazing.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Kickzamazing</h2>
+            <div class="project-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>PHP</span>
+              <span>Canva</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container projects-con">
+            <div class="article-container">
+              <img
+                src="./assets/LMS.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">University of Batangas - LMS Extension</h2>
+            <div class="project-list">
+              <span>Framer</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container projects-con">
+            <div class="article-container">
+              <img
+                src="./assets/Parking-finder.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Parking Finder</h2>
+            <div class="project-list">
+              <span>Unity</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- <div class="details-container color-container projects-con">
+            <div class="article-container">
+              <img
+                src="./assets/bvc-project.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Brahmmy Vs Covid</h2>
+            <div class="project-list">
+              <span>Unity</span>
+              <span>Blender</span>
+              <span>C#</span>
+              <span>JS</span>
+              <span>Adobe</span>
+              <span>Canva</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
           
           
         </div>
@@ -435,29 +577,42 @@
       <h1 class="title">Contact Me</h1>
       
       <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p href="kristinamae.medarano@gmail.com">kristinamae.medrano@gmail.com</p>
+        <div class="details-container">
+          <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+            <p><i class="uil uil-envelope"></i> Email: kristinamae.medrano@gmail.com</p>
+            <p><i class="uil uil-phone"></i> Contact No: +(63) 948 596 9694</p>
         </div>
-      </div>
     </section>
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+      <div class="top-footer">
+          <p>Kristina.</p>
+      </div>
+      <div class="middle-footer">
+          <ul class="footer-menu">
+              <li class="footer_menu_list">
+                  <a href="#home">Home</a>
+              </li>
+              <li class="footer_menu_list">
+                  <a href="#about">About</a>
+              </li>
+              <li class="footer_menu_list">
+                  <a href="#projects">Projects</a>
+              </li>
+              <li class="footer_menu_list">
+                  <a href="#contact">Contact</a>
+              </li>
           </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Kristina Mae. All Rights Reserved.</p>
-    </footer>
+      </div>
+      <div class="footer-social-icons">
+          <div class="icon"><i class="uil uil-instagram"></i></div>
+          <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+          <div class="icon"><i class="uil uil-facebook-f"></i></div>
+          <div class="icon"><i class="uil uil-github-alt"></i></div>
+      </div>
+      <div class="bottom-footer">
+          <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Kristina Mae Medrano</a> - All rights reserved</p>
+      </div>
+  </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
   </body>

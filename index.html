@@ -1,619 +1,565 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <link rel="icon" href="img/myLogo.svg" type="image/png"> -->
+	<title>Medrano | Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
 
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">
-        <img src="assets/kmm.gif" alt="KMM">
-    </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="header-nav">
-      <div class="logo">KMM</div>
-      <div class="header-menu">
-        <div class="header-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container image">
-        <img src="./assets/Medrano.jpg" alt="" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Kristina Mae Medrano</h1>
-        <p class="section__text__p2"><span class="typedText"></span></p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Medrano_Kristina_CV.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#about'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/kristinamae/', '_blank')"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/tintinee/','_blank')"
-          />
-          <img
-            src="./assets/facebook.png"
-            alt="My Facebook profile"
-            class="icon"
-            onclick="window.open('https://www.facebook.com/tintineee6','_blank')"
-          />
-          <img
-            src="./assets/instagram.png"
-            alt="My Instagram profile"
-            class="icon"
-            onclick="window.open('https://instagram.com/tintinee__/','_blank')"
-          />
-        </div>
-      </div>
-    </section>
-      <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-          <div class="section__pic-container">
-            <img
-              src="./assets/Medrano_AM.jpg"
-              alt="Profile picture"
-              class="about-pic"
-            />
-          </div>
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="text-container">
-                <p>
-                  Highly motivated IT graduate equipped with a versatile skill set and a solid academic background. 
-                  Possessing a strong work ethic and exceptional problem-solving abilities, I am adaptable and quick to learn, 
-                  poised to make meaningful contributions to any organization or company that aligns with my skills and aspirations.
-                </p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/details-white.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <h3>Details</h3>
-                <h4> Birthdate: </h4><p>May 31, 2001</p>
-                <h4> Number:</h4><p>055 382 9772</p>
-                <h4> Email:</h4><p> kristinamae.medrano@gmail.com</p>
-                <h4>Address:</h4><p> Masaken Al Muraqqabat 01, Dubai UAE</p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/education-white.png"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <h4> University of Batangas (2019-2023)</h4><p>Bachelor of Science in Information Technology</p>
-                <h4> University of Batangas (2017-2019)</h4><p>Science, Technology, Engineering, and Matahematics</p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/work-white.png"
-                  alt="Work icon"
-                  class="icon"
-                />
-                
-                <h3>Work History</h3>
-                <h4> Kari C x APEX (2023-2024)</h4><p>UI/UX Designer</p>
-                <h4> Kari C x APEX (2023-2024)</h4><p>Office Coordinator/Office Assistant</p>
-                <h4> JCBA Solutions and Cosnsultancy (2023)</h4><p>Web Developer Intern</p>
-              </div>
-            </div>
-            <!-- <div class="text-container">
-              <p>
-                Highly motivated IT graduate equipped with a versatile skill set and a solid academic background. 
-                Possessing a strong work ethic and exceptional problem-solving abilities, I am adaptable and quick to learn, 
-                poised to make meaningful contributions to any organization or company that aligns with my skills and aspirations.
-              </p>
-            </div> -->
-          </div>
-        </div>
-        <!-- <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        /> -->
-      </section>
-      <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Frontend and Backend Development</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML</h3>
-                    <p>Advanced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>CSS</h3>
-                    <p>Advanced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>VB</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Wordpress</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>C#</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>MySQL</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>PHP</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Unity</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Designer</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Figma</h3>
-                    <p>Advanced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Framer</h3>
-                    <p>Advanced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Canva</h3>
-                    <p>Advanced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Procreate</h3>
-                    <p>Advanced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Blender</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Adobe</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            
-          </div>
-          
-        </div>
-      
-      <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      /> -->
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container projects-con">
-            <div class="article-container">
-              <img
-                src="./assets/apex-project.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Apex Global Forum</h2>
-            <div class="project-list">
-              <span>Figma</span>
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-              class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.figma.com/file/XWCzv73KMZ7weahccinmC3/KARI-C?type=design&node-id=0-1&mode=design&t=jjQ2MzGFHmbZJM4a-0', '_blank')"
-            >Live Demo</button>
-            </div>
-          </div>
-          <div class="details-container color-container projects-con">
-            <div class="article-container">
-              <img
-                src="./assets/karic-project.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Kari C</h2>
-            <div class="project-list">
-              <span>Wordpress</span>
-              <span>Elementor</span>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>PHP</span>
-              <span>Canva</span>
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.kari-c.com/', '_blank')"
-            >Live Demo</button>
-            </div>
-          </div>
-          <div class="details-container color-container projects-con">
-            <div class="article-container">
-              <img
-                src="./assets/bvc-project.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Brahmmy Vs Covid</h2>
-            <div class="project-list">
-              <span>Unity</span>
-              <span>Blender</span>
-              <span>C#</span>
-              <span>JS</span>
-              <span>Adobe</span>
-              <span>Canva</span>
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container projects-con">
-            <div class="article-container">
-              <img
-                src="./assets/kickzamazing.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Kickzamazing</h2>
-            <div class="project-list">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>PHP</span>
-              <span>Canva</span>
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container projects-con">
-            <div class="article-container">
-              <img
-                src="./assets/LMS.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">University of Batangas - LMS Extension</h2>
-            <div class="project-list">
-              <span>Framer</span>
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container projects-con">
-            <div class="article-container">
-              <img
-                src="./assets/Parking-finder.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Parking Finder</h2>
-            <div class="project-list">
-              <span>Unity</span>
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <!-- <div class="details-container color-container projects-con">
-            <div class="article-container">
-              <img
-                src="./assets/bvc-project.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Brahmmy Vs Covid</h2>
-            <div class="project-list">
-              <span>Unity</span>
-              <span>Blender</span>
-              <span>C#</span>
-              <span>JS</span>
-              <span>Adobe</span>
-              <span>Canva</span>
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div> -->
-          
-          
-        </div>
-      </div>
-      <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      /> -->
-    </section>
-    
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      
-      <div class="contact-info-upper-container">
-        <div class="details-container">
-          <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-            <p><i class="uil uil-envelope"></i> Email: kristinamae.medrano@gmail.com</p>
-            <p><i class="uil uil-phone"></i> Contact No: +(63) 948 596 9694</p>
-        </div>
-    </section>
-    <footer>
-      <div class="top-footer">
-          <p>Kristina.</p>
-      </div>
-      <div class="middle-footer">
-          <ul class="footer-menu">
-              <li class="footer_menu_list">
-                  <a href="#home">Home</a>
-              </li>
-              <li class="footer_menu_list">
-                  <a href="#about">About</a>
-              </li>
-              <li class="footer_menu_list">
-                  <a href="#projects">Projects</a>
-              </li>
-              <li class="footer_menu_list">
-                  <a href="#contact">Contact</a>
-              </li>
-          </ul>
-      </div>
-      <div class="footer-social-icons">
-          <div class="icon"><i class="uil uil-instagram"></i></div>
-          <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-          <div class="icon"><i class="uil uil-facebook-f"></i></div>
-          <div class="icon"><i class="uil uil-github-alt"></i></div>
-      </div>
-      <div class="bottom-footer">
-          <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Kristina Mae Medrano</a> - All rights reserved</p>
-      </div>
-  </footer>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
-  </body>
+<body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><h2 style="color: #4458dc;">KMM.</h2></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+							<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+						
+							<li class="nav-item"><a class="nav-link" href="#newsletter">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area" id="home">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="text-uppercase">Hell0</h3>
+							<h1 class="text-uppercase">I am Kristina Medrano</h1>
+							<h5 class="text-uppercase">Front-end Developer</h5>
+							<div class="d-flex align-items-center">
+								<a class="primary_btn" href="#"><span>Hire Me</span></a>
+								<a class="primary_btn tr-bg" href="others/" target="_blank"><span>Get CV</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img/banner/home-right.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start About Us Area =================-->
+	<section class="about_area section_gap" id="about">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="img/about-us.png" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2>let’s <br>
+							Introduce about <br>
+							myself</h2>
+						<p>
+							I'm Kristina Mae Medrano, a Front-end Developer with a fresh IT background and experience in HTML, 
+							CSS, JavaScript, PHP, VB, C#, MySQL, and Unity. Skilled in creating dynamic websites with WordPress 
+							and Shopify, and proficient in design tools like Figma, Canva, and Adobe.
+						</p>
+						<p>
+							Creative and detail-oriented, I craft responsive, user-friendly websites that transform design 
+							concepts into engaging digital experiences, always focused on delivering high-quality solutions 
+							that enhance user engagement and align with client goals.
+						</p>
+						<a class="primary_btn" href="others/" download=""><span>Download CV</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Us Area =================-->
+
+	<!--================ Srart Brand Area =================-->
+	<!-- <section class="brand_area section_gap_bottom">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo1.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo2.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo3.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo4.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo5.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo6.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo7.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo8.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo9.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-4 col-md-6">
+					<div class="client-info">
+						<div class="d-flex mb-50">
+							<span class="lage">10</span>
+							<span class="smll">Years Experience Working</span>
+						</div>
+						<div class="call-now d-flex">
+							<div>
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="ml-15">
+								<p>call us now</p>
+								<h3>(+1)-800-555-6789</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!--================ End Brand Area =================-->
+
+	<!--================ Start Features Area =================-->
+	<section class="features_area" id="services">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>service offers </h2>
+						<p>
+							Offering Front End and Backend Development, UI/UX Design, and SEO Optimization to 
+							<br> create responsive, user-friendly, and high-performance solutions.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row feature_inner">
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s1.png" alt="">
+						<h4>Website <br>Development</h4>
+						<p>Creating responsive websites, converting designs to code, and developing custom WordPress themes.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s2.png" alt="">
+						<h4>Website <br>Optimization</h4>
+						<p>Optimizing website speed, performance, and front-end SEO.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s3.png" alt="">
+						<h4>UI/UX <br>Design</h4>
+						<p>Crafting intuitive, user-centered interfaces for optimal usability and engagement.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s4.png" alt="">
+						<h4>Seo <br>Optimization</h4>
+						<p>Boosting visibility, organic traffic, and search rankings with targeted strategies.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Features Area =================-->
+
+	<!--================Start Portfolio Area =================-->
+	<section class="portfolio_area" id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>quality work <br>
+							Recently done project </h2>
+					</div>
+				</div>
+			</div>
+			<div class="filters portfolio-filter">
+				<ul>
+					<li class="active" data-filter="*">all</li>
+					<!-- <li data-filter=".popular">Latest</li> -->
+					<li data-filter=".wordpress"> WordPress</li>
+					<li data-filter=".figma">Figma | Framer</li>
+					<li data-filter=".adobe">Adobe</li>
+					<li data-filter=".others">Others</li>
+				</ul>
+			</div>
+	
+			<div class="filters-content">
+				<div class="row portfolio-grid justify-content-center">
+					<div class="col-lg-4 col-md-6 all wordpress figma">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/apex-project.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/apex-project.jpg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="#">Apex Global Forum</a></h4>
+								<p>Wordpress | Figma</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all adobe">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/bvc-project.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/bvc-project.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="#">Brahmmy vs Covid</a></h4>
+								<p>Unity | C# | Adobe</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all wordpress figma">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/karic-project.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/karic-project.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="#">Kari-C</a></h4>
+								<p>Wordpress | Figma</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 all figma">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/LMS.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/LMS.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="#">University of Batangas - LMS Extension</a></h4>
+								<p>Framer</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all adobe">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/Parking-finder.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/Parking-finder.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="#">Parking Finder</a></h4>
+								<p>Unity | Adobe</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all others">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/kickzamazing.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/kickzamazing.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="#">Kickzamazing</a></h4>
+								<p>HTML | CSS | JS | PHP</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Portfolio Area =================-->
+
+	<!--================ Start Testimonial Area =================-->
+	<!-- <div class="testimonial_area section_gap_bottom">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>client say about me</h2>
+						<p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
+							 beginning signs open god you're gathering ithe</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="testi_slider owl-carousel">
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t1.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Elite Martin</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t2.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Davil Saden</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t1.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Elite Martin</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t2.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Davil Saden</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t1.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Elite Martin</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t2.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Davil Saden</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+			</div>
+		</div>
+	</div> -->
+	<!--================ End Testimonial Area =================-->
+
+	<!--================ Start Newsletter Area =================-->
+	<section class="newsletter_area" id="newsletter">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-12">
+					<div class="subscription_box text-center">
+						<h2 class="text-uppercase text-white">get update from anywhere</h2>
+						<p class="text-white">
+							I’d love to hear from you! Whether you're interested in a collaboration or just want to say hello,
+							<br> feel free to reach out at <i>kristinamae.medrano@gmail.com</i>. Let’s connect!
+						</p>
+						<!-- <div class="subcribe-form" id="mc_embed_signup">
+							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
+								<input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
+								<div style="position: absolute; left: -5000px;">
+									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+								</div>
+								<button class="primary-btn hover d-inline">Get Started</button>
+								<div class="info"></div>
+							</form>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Newsletter Area =================-->
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo logo_h">
+							<a href="#">
+								<img src="img/myLogo.svg" alt="">
+							</a>
+							<h4>Follow Me</h4>
+						</div>
+						<div class="footer_social">
+							<a href="https://www.facebook.com/tintineee6" target="_blank"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.instagram.com/tintinee__" target="_blank"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.linkedin.com/in/kristinamae/" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<a href="https://github.com/tintinee" target="_blank"><i class="fa fa-github"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+	<script src="js/scroll.js"></script>
+</body>
+
 </html>

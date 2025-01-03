@@ -356,7 +356,8 @@ button:focus {
       padding-top: 197px; }
       @media (max-width: 1480px) {
         .home_banner_area .banner_inner .home_right_img img {
-          max-width: 100%;
+          /* max-width: 100%; */
+          width: 700px;
           height: auto; } }
       @media (max-width: 991px) {
         .home_banner_area .banner_inner .home_right_img {
@@ -2472,7 +2473,7 @@ h6 {
 /* Start Features Area css
 ============================================================================================ */
 .features_area {
-  padding-bottom: 170px; }
+  padding-bottom: 80px; }
   @media (max-width: 1199px) {
     .features_area {
       padding-bottom: 50px; } }
@@ -2612,7 +2613,7 @@ h6 {
 /* Start Portfolio Area css
 ============================================================================================ */
 .portfolio_area {
-  padding-bottom: 120px; }
+  padding-bottom: 10px; }
   @media (max-width: 991px) {
     .portfolio_area {
       padding-bottom: 50px; } }
@@ -3164,7 +3165,7 @@ h6 {
   ============================================================================================ */
   .section_gap {
     padding-top: 70px;
-    padding-bottom: 70px; }
+    padding-bottom: 50px; }
 
   .main_title h2 {
     font-size: 25px; }
